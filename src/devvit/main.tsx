@@ -10,8 +10,8 @@ defineConfig({
   description: 'Can you guess the word?',
   entry: 'index.html',
   height: 'tall',
-  inline: true,
-  // TODO: Cannot use without webhooks
+  menu: { enable: false }
+  // TODO: Cannot use without ability to pass in more metadata
   // menu: {
   //   enable: true,
   //   label: 'New Word Guesser Post',
