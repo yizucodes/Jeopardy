@@ -7,7 +7,6 @@ import { postConfigNew } from '../server/core/post';
 
 defineConfig({
   name: 'Word Guesser',
-  description: 'Can you guess the word?',
   entry: 'index.html',
   height: 'tall',
   menu: { enable: false }
