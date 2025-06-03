@@ -22,6 +22,7 @@
     "@devvit/client": "0.11.16",
     "@devvit/public-api": "0.11.16",
     "@devvit/server": "0.11.16",
+    "@devvit/redis": "0.11.16",
     "@tweenjs/tween.js": "18.6.4",
     "clsx": "2.1.1",
     "devvit": "latest",
