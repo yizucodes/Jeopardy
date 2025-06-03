@@ -6,15 +6,15 @@ import { defineConfig } from '@devvit/server';
 import { postConfigNew } from '../server/core/post';
 
 defineConfig({
-  name: 'Word Guesser',
+  name: 'Jeopardy Game',
   entry: 'index.html',
   height: 'tall',
   menu: { enable: false },
   // TODO: Cannot use without ability to pass in more metadata
   // menu: {
   //   enable: true,
-  //   label: 'New Word Guesser Post',
-  //   postTitle: 'Word Guesser',
+  //   label: 'New Jeopardy Game Post',
+  //   postTitle: 'Jeopardy Game',
   //   preview: <Preview />,
   // },
 });
@@ -43,7 +43,7 @@ export const Preview: Devvit.BlockComponent<{ text?: string }> = ({ text = 'Load
 // TODO: Remove this when defineConfig allows webhooks before post creation
 Devvit.addMenuItem({
   // Please update as you work on your idea!
-  label: 'Word Guesser: New Post',
+  label: 'Jeopardy: New Game Post',
   location: 'subreddit',
   forUserType: 'moderator',
   onPress: async (_event, context) => {
@@ -54,7 +54,7 @@ Devvit.addMenuItem({
       const subreddit = await reddit.getCurrentSubreddit();
       post = await reddit.submitPost({
         // Title of the post. You'll want to update!
-        title: 'Word Guesser',
+        title: 'Jeopardy Game - Test Your Knowledge! 🎯',
         subredditName: subreddit.name,
         preview: <Preview />,
       });
