@@ -12,7 +12,7 @@ export const postConfigMaybeGet = async ({
   redis,
   postId,
 }: {
-  redis: Context['redis'];
+  redis: Context['redis'] | RedisClient;
   postId: string;
 }): Promise<PostConfig | undefined> => {
   const config = await redis.get(getPostConfigKey(postId));
@@ -23,7 +23,7 @@ export const postConfigGet = async ({
   redis,
   postId,
 }: {
-  redis: Context['redis'];
+  redis: Context['redis'] | RedisClient;
   postId: string;
 }): Promise<PostConfig> => {
   const config = await postConfigMaybeGet({ redis, postId });
@@ -36,7 +36,7 @@ export const postConfigSet = async ({
   postId,
   config,
 }: {
-  redis: Context['redis'];
+  redis: Context['redis'] | RedisClient;
   postId: string;
   config: Partial<PostConfig>;
 }): Promise<void> => {
