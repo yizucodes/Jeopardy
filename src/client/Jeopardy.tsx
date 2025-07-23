@@ -163,32 +163,32 @@ const questions: Record<string, Question> = {
     value: 1000
   },
 
-  // GEOGRAPHY CATEGORY
-  "GEOGRAPHY_200": {
+  // PLACES CATEGORY
+  "PLACES_200": {
     clue: "This is the largest country in the world by land area",
     answers: ["China", "Russia", "Canada"],
     correct: 1,
     value: 200
   },
-  "GEOGRAPHY_400": {
+  "PLACES_400": {
     clue: "This river is the longest in the world",
     answers: ["Amazon", "Nile", "Mississippi"],
     correct: 1,
     value: 400
   },
-  "GEOGRAPHY_600": {
+  "PLACES_600": {
     clue: "This mountain range contains Mount Everest",
     answers: ["Himalayas", "Rockies", "Alps"],
     correct: 0,
     value: 600
   },
-  "GEOGRAPHY_800": {
+  "PLACES_800": {
     clue: "This desert is the largest hot desert in the world",
     answers: ["Gobi", "Sahara", "Mojave"],
     correct: 1,
     value: 800
   },
-  "GEOGRAPHY_1000": {
+  "PLACES_1000": {
     clue: "This city is the capital of Australia",
     answers: ["Sydney", "Melbourne", "Canberra"],
     correct: 2,
@@ -228,7 +228,7 @@ const questions: Record<string, Question> = {
   }
 };
 
-const categories = ["INTERNET", "MOVIES", "SCIENCE", "GEOGRAPHY", "FOOD"];
+const categories = ["INTERNET", "MOVIES", "SCIENCE", "PLACES", "FOOD"];
 const values = [200, 400, 600, 800, 1000];
 
 export const Jeopardy: React.FC = () => {
